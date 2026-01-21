@@ -1,0 +1,33 @@
+{
+  "name": "mcp-hostname-ip-server",
+  "version": "1.0.0",
+  "description": "MCP server with hostname and IP address tools",
+  "main": "dist/server.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "start:http": "MCP_TRANSPORT=http node dist/server.js",
+    "dev": "tsx src/server.ts",
+    "dev:http": "MCP_TRANSPORT=http tsx src/server.ts"
+  },
+
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "hostname",
+    "ip-address"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "tsx": "^4.0.0"
+  }
+}
+
